@@ -15,7 +15,18 @@ clock = pygame.time.Clock()
 # definindo uma grid para o jogo
 game_grid = Grid()
 
-block = LBlock()
+block = IBlock()
+
+#block.move(4,3)
+#
+#block2 = ZBlock()
+#block2.move(9,2)
+#
+#block3 = OBlock()
+#block3.move(0,0)
+#
+#block4 = TBlock()
+#block4.move(6,6)
 
 #game_grid.print_grid()
 
@@ -30,6 +41,9 @@ while True:
     screen.fill(dark_blue)
     game_grid.draw(screen)
     block.draw(screen)
+    #block2.draw(screen)
+    #block3.draw(screen)
+    #block4.draw(screen)
 
 
     pygame.display.update()
